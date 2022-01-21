@@ -32,21 +32,23 @@ x = 0
 y = 0 
 z = 0
 l = []
-inf = 10000
-while x < inf:
-    x += 1
-    while y < inf:
-        y += 1
-        while z < inf:
-            z += 1
-            l = [x,x+y,x+y+z]
-            print (l)
-            if check(l):
-                break
-        if z == inf:
-            z = 0
-    if y == inf:
-            y = 0
+inf = 3
+while inf < math.inf:
+    inf += 1
+    while x < inf:
+        x += 1
+        while y < inf:
+            y += 1
+            while z < inf:
+                z += 1
+                l = [x,x+y,x+y+z]
+                print (l)
+                if check(l):
+                    break
+            if z == inf:
+                z = 0
+        if y == inf:
+                y = 0
 print (l)
 
 
